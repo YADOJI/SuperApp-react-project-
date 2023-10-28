@@ -1,0 +1,56 @@
+.singupform{
+    background-color: #000;
+}
+.superapp{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace ;
+    color: lawngreen;
+    text-align: center;
+    margin-top: 8%;
+}
+.createaccount{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2%;
+    color: aliceblue;
+}
+.form{
+    margin-top: .5rem;
+    padding: 2rem;
+}
+.forminput{
+    height: 2.8rem;
+    width: 65%;
+    margin: 1% 17%;
+    padding: 5px;
+    background-color: #292929;
+    border: none;
+    color: aliceblue;    
+}
+.checkbox{
+    margin: 1% 17%;
+    height: 2rem;
+}
+.singup{
+    height: 2.2rem;
+    width: 65%;
+    margin: 1% 17%;
+    font-size: medium;
+    font-weight: 600;
+    background-color: lawngreen;
+    color: aliceblue;
+    border-radius: 23px ;
+    border: none;
+}
+label{
+    color: aliceblue;
+
+}
+p{
+    color: aliceblue;
+    margin: 1% 17%;
+    font-size: 1.2rem;
+}
+span{
+    color: lawngreen;
+}
