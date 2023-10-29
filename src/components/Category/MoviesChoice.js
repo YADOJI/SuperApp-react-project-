@@ -1,9 +1,17 @@
 import React from 'react'
-import MoviesChoiceCSS from "../../components/Category/MoviesChoiceCSS.css"
+import styles from "../../components/Category/MoviesChoiceCSS.css"
 
 const MoviesChoice = () => {
   return (
-    <div className='rroo'>MoviesChoicejjj</div>
+    <div className={styles.container} style={{display:"flex"}}>
+      <div className={styles.left}>
+        <p className={styles.rroo}>dsgdsfgdsgdsfg</p>
+        <h1 className={styles.superapp}>Super app</h1>  
+      </div> 
+      <div className={styles.right}>
+        
+      </div> 
+    </div>
   )
 }
 

@@ -63,7 +63,7 @@ const SingupForm = () => {
     }
     if (valid){
       window.localStorage.setItem("formDatas", JSON.stringify(formData))
-      navigate("/category")
+      navigate("/categorychoice")
     }
   }
 

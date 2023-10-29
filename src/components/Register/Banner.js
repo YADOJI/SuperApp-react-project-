@@ -1,6 +1,6 @@
 import React from 'react'
 import BG from "../../assets/BGimage.png"
-import Bannerstyle from "../../components/Register/Bannerstyle.css"
+import styles from "../../components/Register/Bannerstyle.css"
 
 const Banner = () => {
   return (
