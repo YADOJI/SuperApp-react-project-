@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
 import SingupFormStyle from "./SingupFormStyle.css"
 import { useNavigate } from 'react-router-dom';
+import CategoryChoice from '../../pages/CategoryChoice';
 
 
 const SingupForm = () => {
@@ -62,7 +63,7 @@ const SingupForm = () => {
     }
     if (valid){
       window.localStorage.setItem("formDatas", JSON.stringify(formData))
-      navigate("/home")
+      navigate("/category")
     }
   }
 
@@ -70,7 +71,7 @@ const SingupForm = () => {
     <div className='singupform'>
       <h1 className='superapp'>Super app</h1>
       <h3 className='createaccount'>Create your new account</h3>
-      <form className='form' onChange={handelSubmit}>
+      <form className='form' onSubmit={handelSubmit}>
         <input type='text' name='names' value={formData.names} onChange={handelChange} className='forminput name' placeholder='Name' /><br />
         {namesError ? (<p>please fill correctly</p>) : (<></>)}
         <input type='text' name='userName' value={formData.userName} onChange={handelChange} className='forminput username' placeholder='User Name' /><br />
@@ -82,7 +83,7 @@ const SingupForm = () => {
         <input type='checkbox' id='checkbox' name='isChecked' checked={formData.isChecked} onChange={handelChange} className='checkbox' />
         <label htmlFor='checkbox'>Share my registration data with Superapp</label>
         {singUpError ? (<p>please fill correctly</p>) : (<></>)}
-        <button className='singup' onClick={handelSubmit}>SING UP</button>
+        <button className='singup'>SING UP</button>
       </form>
       <p>By clicking on Sign up. you agree to Superapp <span> Terms and Conditions of Use </span></p>
       <p>To learn more about how Superapp collects, uses, shares and protects your personal data please head Superapp <span> Privacy Policy </span></p>
